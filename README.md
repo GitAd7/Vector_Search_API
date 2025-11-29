@@ -1,4 +1,5 @@
 Text Intelligence API
+
 FastAPI - NLP - Transformers - Docker
 
 This project is a fully functional AI-powered text intelligence API built using FastAPI, SpaCy, and HuggingFace Transformers.
@@ -38,39 +39,42 @@ text_intelligence_api/
 Features
 1. /analyze — Sentiment + Keywords
 
-Uses DistilBERT for sentiment
+    Uses DistilBERT for sentiment
 
-Uses SpaCy for NLP keyword extraction
+    Uses SpaCy for NLP keyword extraction
 
 2. /summarize — Text Summarization
 
-Uses facebook/bart-large-cnn for high-quality summarization
+    Uses facebook/bart-large-cnn for high-quality summarization
 
 3. /entities — Named Entity Recognition
 
-Uses SpaCy’s en_core_web_sm model
+   Uses SpaCy’s en_core_web_sm model
 
 4. /clean — Text Preprocessing
 
-Lowercasing
+    Lowercasing
 
-Removing special characters
+    Removing special characters
 
-Stripping whitespace
+    Stripping whitespace
 
 5. Swagger UI
 
-Auto-generated documentation available at:
-➡️ http://127.0.0.1:8000/docs
+   Auto-generated documentation available at:
+   http://127.0.0.1:8000/docs
 
-🛠️ Local Installation (Without Docker)
+  Local Installation (Without Docker)
 1. Clone the repository
+
 git clone https://github.com/<your-username>/text_intelligence_api.git
+
 cd text_intelligence_api
 
 2. Create Virtual Environment
 python -m venv txtapienv # With Python
-conda activate txtapienv # With conda (I prefer)
+
+conda create --name txtapienv # With conda (I prefer)
 
 
 Activate:
@@ -102,4 +106,5 @@ docker run -p 8000:8000 text-intel-api
 Your API is now live at:
 
 http://localhost:8000/
+
 http://127.0.0.1:8000/docs
